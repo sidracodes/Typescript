@@ -66,7 +66,7 @@ baby steps to learn typescript : https://github.com/panaverse/learn-typescript
  typescript engine inferred the data type itself if not assigned
 
 ## strong typing
- assigning specific data type to vairiable
+ assigning specific data type to vairiable(number,boolean,string,object,array,function)
    1. type annotation(explicit type)
  assigning data type to variable
    2. type union
@@ -88,7 +88,7 @@ json object have data in key value pairs wrapped in inverted commas
 simple objects have data in key value pairs , with values wrapped in inverted commas
 
 ### structural typing
- structural typing means assignable if same structure OR
+ simple object literals assignable if same structure OR
  righthandside must have atleast lefthandside properties
   # Case when "FRESH" "STALE" object literal are assigned to a variable
  1. Case 1:
@@ -110,15 +110,21 @@ let has block scoped, var has function scope, constant can not be changed
 ### nonnull assertion
 value cannot be null or undefined
 
-### type any , type unknown , type void , type never
+### optional vs non null assertion
+
+### type any vs type unknown
+
+### return type void vs never
 Function returning never must not have a reachable end point
 Function returning void must not returns anything
+
+### undefined vs null type
 
 ### explicit type casting
 myname as string;
 <string> myname;
 
-### enum vs const enum
+### type enum vs const enum
 constant enum can only be accessed through string literal and index
 enum can  be accessed through string literal and also index
 
@@ -132,7 +138,16 @@ tuples
 function used as a parameter inside another function is a callback function
 2. optional paramter 
 value is optional name?:string
-3. function default parameter
-rest_parameter
+3. default parameter
 4. function overloading
 many functions with same names but different parameters
+5. rest parameter
+
+### type generics 
+1. simple generic type
+2. generic type object
+2. generic type function
+2. generic type array
+
+### generic constraints
+generic extends interface or type
